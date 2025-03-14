@@ -124,3 +124,40 @@
   border-radius: 50%;
   background-color: hsl(var(--primary));
 }
+
+/* Dashboard layout styles */
+.dashboard-sidebar {
+  transition: width 0.3s ease;
+}
+
+.dashboard-sidebar-collapsed {
+  width: 80px;
+}
+
+.dashboard-sidebar-expanded {
+  width: 250px;
+}
+
+/* Sidebar link hover effect */
+.sidebar-link {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: hsl(var(--primary) / 0.1);
+}
+
+.sidebar-link.active {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Dashboard card hover effect */
+.dashboard-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
